@@ -1,6 +1,6 @@
-FROM alpine:3.8
+FROM ubuntu:18.10
 
-#RUN apt-get update
-RUN apk add vim
+RUN apt-get update; \
+    apt-get install -y vim;
 
 WORKDIR /mnt
